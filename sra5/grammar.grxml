@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE grammar PUBLIC "-//W3C//DTD GRAMMAR 1.0//EN"
+                "grammar.dtd">
+<!-- the default grammar language is FR  -->
+<grammar  version="1.0"
+          mode ="voice"
+          xmlns="http://www.w3.org/2001/06/grammar"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.w3.org/2001/06/grammar
+                              grammar.xsd"
+          xml:lang="fr-FR" root="answer" tag-format="semantics/1.0">
+          
+   <rule id="answer" scope="public"> 
+    <ruleref special="GARBAGE" /> 
+    <one-of>
+	  <item><ruleref uri="#blue"/>
+		<tag>out="blue";</tag>
+	  </item>
+	  <item><ruleref uri="#green"/>
+		<tag>out="green";</tag>
+	  </item>
+	  <item><ruleref uri="#black"/>
+		<tag>out="black";</tag>
+	  </item>
+	  <item><ruleref uri="#ici"/>
+		<tag>out="ici";</tag>
+	  </item>
+    </one-of>
+    <ruleref special="GARBAGE" />
+  </rule>
+
+  <rule id="red">
+    <one-of>
+      <item>rouge</item>
+    </one-of>
+  </rule>
+  <rule id="blue">
+    <one-of>
+      <item>bleu</item>
+    </one-of>
+  </rule>
+  <rule id="green">
+    <one-of>
+      <item>vert</item>
+    </one-of>
+  </rule>
+   <rule id="black">
+    <one-of>
+      <item>noir</item>
+    </one-of>
+  </rule>
+   <rule id="ici">
+    <one-of>
+      <item>ici</item>
+	  <item>là</item>
+      <item>à cette position</item>
+    </one-of>
+  </rule>
+  <rule id="form">
+    <one-of>
+      <item>rectange</item>
+	  <item>elipse</item>
+      <item>objet</item>
+    </one-of>
+  </rule>
+</grammar>
