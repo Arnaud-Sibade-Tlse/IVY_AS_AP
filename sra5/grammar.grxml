@@ -22,6 +22,21 @@
 	  <item><ruleref uri="#black"/>
 		<tag>out="black";</tag>
 	  </item>
+	  <item><ruleref uri="#red"/>
+		<tag>out="red";</tag>
+	  </item>
+	  	  <item><ruleref uri="#yellow"/>
+		<tag>out="yellow";</tag>
+	  </item>
+	  	  <item><ruleref uri="#white"/>
+		<tag>out="white";</tag>
+	  </item>
+	  <item><ruleref uri="#delete"/>
+		<tag>out="delete";</tag>
+	  </item>
+	  <item><ruleref uri="#accept"/>
+		<tag>out="accept";</tag>
+	  </item>
 	  <item><ruleref uri="#ici"/>
 		<tag>out="ici";</tag>
 	  </item>
@@ -49,11 +64,33 @@
       <item>noir</item>
     </one-of>
   </rule>
+  <rule id="yellow">
+    <one-of>
+      <item>jaune</item>
+    </one-of>
+  </rule>
+     <rule id="white">
+    <one-of>
+      <item>blanc</item>
+    </one-of>
+  </rule>
    <rule id="ici">
     <one-of>
       <item>ici</item>
 	  <item>là</item>
       <item>à cette position</item>
+    </one-of>
+  </rule>
+     <rule id="delete">
+    <one-of>
+      <item>supprimer</item>
+	  <item>effacer</item>
+    </one-of>
+  </rule>
+     <rule id="accept">
+    <one-of>
+      <item>valider</item>
+	  <item>créer</item>
     </one-of>
   </rule>
   <rule id="form">

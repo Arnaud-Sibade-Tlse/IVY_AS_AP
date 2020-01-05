@@ -5,9 +5,6 @@ import fr.dgac.ivy.IvyApplicationListener;
 import fr.dgac.ivy.IvyException;
 import fr.dgac.ivy.IvyMessageListener;
 import fr.irit.elipse.enseignement.isia.PaletteGraphique;
-import fr.irit.ens.$1reco.$1Learning;
-import fr.irit.ens.$1reco.$1Recognizer;
-import fr.irit.diamant.ivy.viewer.Visionneur;
 
 import IvyImpl.MyIvyApplicationListener;
 import IvyImpl.MyIvyMessageListener;
